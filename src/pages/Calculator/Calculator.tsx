@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { withStyles } from "@material-ui/core/styles";
 import { CSSProperties } from "@material-ui/styles";
 import { CustomTheme } from "../../style/theme";
-import { Button } from "@material-ui/core";
+// import { Button } from "@material-ui/core";
 
 import kanjiSun from "../../assets/kanji/Kanji sun.svg";
 import kanjiBook from "../../assets/kanji/Kanji book.svg";
@@ -13,7 +13,7 @@ import kanjiLeft from "../../assets/kanji/Kanji-left.svg";
 import { FOOD_ITEMS, FoodItem } from "../../data/food";
 import { FoodTile } from "../../components";
 
-import { sendData } from "../../utils/send-data";
+// import { sendData } from "../../utils/send-data";
 
 type ClassNames =
   | "container"
@@ -78,9 +78,10 @@ export const CalculatorPage: React.FC<Props> = (props: Props) => {
             </div>
           </div>
           <div className={classes.buttonContainer}>
-            <Button variant="contained" onClick={sendData(result)}>
+            <p>{result} Kcal</p>
+            {/* <Button variant="contained" onClick={sendData(result)}>
               {result} Kcal
-            </Button>
+            </Button> */}
           </div>
         </div>
         <div className={classes.lateralBar}>
